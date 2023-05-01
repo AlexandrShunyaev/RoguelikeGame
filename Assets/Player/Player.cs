@@ -1,5 +1,7 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -8,14 +10,16 @@ public class Player : MonoBehaviour
 
     private SpriteRenderer _spriteRenderer;
     private Transform _transform;
+    private Weapon _weapon;
 
     private Vector2 _moveDirection = Vector2.zero;
-    private Vector2 _lookDirection = Vector2.zero;
+    private Vector3 _aimPosition = Vector3.zero;
 
     private void Awake()
     {
         _transform = transform;
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        _weapon = GetComponentInChildren<Weapon>();
     }
 
     private void Update()
@@ -29,16 +33,22 @@ public class Player : MonoBehaviour
         _moveDirection = Vector2.zero;
     }
 
+    public void Fire() => _weapon.Fire();
+
     public void SetMoveDirection(Vector2 direction) => _moveDirection = direction;
-    public void SetLookDirection(Vector2 direction) => _lookDirection = direction;
+    public void SetAimPosition(Vector3 direction)
+    {
+        _aimPosition = direction;
+        _weapon.SetAimPosition(_aimPosition);
+    }
 
     private void FlipSprite()
     {
-        if (_lookDirection.x > _transform.position.x && _spriteRenderer.flipX)
+        if (_aimPosition.x > _transform.position.x && _spriteRenderer.flipX)
         {
             _spriteRenderer.flipX = false;
         }
-        else if (_lookDirection.x < _transform.position.x && !_spriteRenderer.flipX)
+        else if (_aimPosition.x < _transform.position.x && !_spriteRenderer.flipX)
         {
             _spriteRenderer.flipX = true;
         }

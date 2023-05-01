@@ -41,9 +41,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Weapons\Projectile.cs" />
+     <Compile Include="Assets\Weapons\Weapon.cs" />
      <Compile Include="Assets\Player\PlayerInputActions.cs" />
-     <Compile Include="Assets\Player\Player.cs" />
+     <Compile Include="Assets\Weapons\DefaultProjectile.cs" />
      <Compile Include="Assets\Player\PlayerController.cs" />
+     <Compile Include="Assets\Weapons\DefaultWeapon.cs" />
+     <Compile Include="Assets\Player\Player.cs" />
      <Folder Include="Assets" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\mergetool.ja.txt" />
      <Folder Include="Assets\Sprites\Objects and buildings" />
@@ -80,6 +84,7 @@
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\package.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\guihelp.ja.txt" />
      <Folder Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Graphics" />
+     <Folder Include="Assets\Weapons" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\xdiff.ja.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\configurehelper.es.txt" />
      <Folder Include="Library\PackageCache\com.unity.burst@1.6.6\Tests" />
@@ -109,6 +114,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\clientcommon.ja.txt" />
      <Folder Include="Library\PackageCache\com.unity.2d.path@5.0.2" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\basecommands.zh-Hans.txt" />
+     <Folder Include="Assets\Enviroment" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\PackageConversionData.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\guihelp.en.txt" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6" />
@@ -995,9 +1001,17 @@
       <Project>{37e29e2b-491b-f85b-cb5a-bf201dddb226}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{c5457e9f-9e2c-93f7-e757-84f28574b8e6}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Burst.csproj">
       <Project>{e257c54a-2b65-9785-1448-9f417aff3ada}</Project>
       <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{d0cba9f8-2524-865f-abb1-184a3b71162c}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{65893b3c-1a1c-b906-5618-70d9d016a3eb}</Project>
@@ -1038,14 +1052,6 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{32bdb637-a444-fa37-57e6-25e11c030d00}</Project>
       <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{d0cba9f8-2524-865f-abb1-184a3b71162c}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{c5457e9f-9e2c-93f7-e757-84f28574b8e6}</Project>
-      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
