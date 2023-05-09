@@ -7,6 +7,7 @@ TagManager:
   - Projectile
   - Environment
   - Enemy
+  - Water
   layers:
   - Default
   - TransparentFX

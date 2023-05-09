@@ -1,0 +1,47 @@
+{
+    "CommonEnemyBehavior": {
+        "checkpoints": [
+            {
+                "steps": 499980,
+                "file_path": "results\\1\\CommonEnemyBehavior\\CommonEnemyBehavior-499980.onnx",
+                "reward": 2.32383343949914,
+                "creation_time": 1683572791.8250952,
+                "auxillary_file_paths": [
+                    "results\\1\\CommonEnemyBehavior\\CommonEnemyBehavior-499980.pt"
+                ]
+            },
+            {
+                "steps": 999958,
+                "file_path": "results\\1\\CommonEnemyBehavior\\CommonEnemyBehavior-999958.onnx",
+                "reward": 0.8919231467522107,
+                "creation_time": 1683574017.9868257,
+                "auxillary_file_paths": [
+                    "results\\1\\CommonEnemyBehavior\\CommonEnemyBehavior-999958.pt"
+                ]
+            },
+            {
+                "steps": 1000022,
+                "file_path": "results\\1\\CommonEnemyBehavior\\CommonEnemyBehavior-1000022.onnx",
+                "reward": 0.8919231467522107,
+                "creation_time": 1683574018.121502,
+                "auxillary_file_paths": [
+                    "results\\1\\CommonEnemyBehavior\\CommonEnemyBehavior-1000022.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000022,
+            "file_path": "results\\1\\CommonEnemyBehavior.onnx",
+            "reward": 0.8919231467522107,
+            "creation_time": 1683574018.121502,
+            "auxillary_file_paths": [
+                "results\\1\\CommonEnemyBehavior\\CommonEnemyBehavior-1000022.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu117"
+    }
+}

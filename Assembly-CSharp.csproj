@@ -42,10 +42,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Weapons\Projectile.cs" />
+     <Compile Include="Assets\Enemy\CommonEnemy\CommonEnemyTeacher.cs" />
      <Compile Include="Assets\Weapons\Weapon.cs" />
      <Compile Include="Assets\Player\PlayerInputActions.cs" />
      <Compile Include="Assets\Weapons\DefaultProjectile.cs" />
      <Compile Include="Assets\Player\PlayerController.cs" />
+     <Compile Include="Assets\Enemy\Enemy.cs" />
      <Compile Include="Assets\Weapons\DefaultWeapon.cs" />
      <Compile Include="Assets\Player\Player.cs" />
      <Folder Include="Assets" />
@@ -53,9 +55,11 @@
      <Folder Include="Assets\Sprites\Objects and buildings" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\images.zh-Hans.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\guihelp.zh-Hant.txt" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\runtimes\linux" />
      <Folder Include="Library\PackageCache\com.unity.test-framework@1.1.31" />
      <Folder Include="Assets\Sprites\Objects and buildings\Bridge" />
      <Folder Include="Assets\Sprites\Vegetation" />
+     <Folder Include="Library\PackageCache\com.unity.barracuda@3.0.0\Barracuda\Runtime" />
      <Folder Include="Assets\Sprites\Objects and buildings\Barrels and crates" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\plastic-gui.zh-Hant.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\images.es.txt" />
@@ -78,13 +82,16 @@
      <Folder Include="Assets\Sprites\Objects and buildings\Chest" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\clientcommon.es.txt" />
      <Folder Include="Library\PackageCache\com.unity.cinemachine@2.8.9" />
+     <Folder Include="Library\PackageCache\com.unity.barracuda@3.0.0\Barracuda\Runtime\Plugins" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources" />
      <Folder Include="Library\PackageCache\com.unity.2d.common@6.0.6\Tests" />
+     <None Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\package.json" />
      <Folder Include="Library\PackageCache\com.unity.inputsystem@1.5.1\Tests" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\package.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\guihelp.ja.txt" />
      <Folder Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Graphics" />
      <Folder Include="Assets\Weapons" />
+     <None Include="Assets\ML-Agents\Timers\SampleScene_timers.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\xdiff.ja.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\configurehelper.es.txt" />
      <Folder Include="Library\PackageCache\com.unity.burst@1.6.6\Tests" />
@@ -93,6 +100,8 @@
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\configurehelper.en.txt" />
      <Folder Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Tests" />
+     <Folder Include="Library\PackageCache\com.unity.barracuda@3.0.0\Barracuda\Runtime\Plugins\ProtoBuffer" />
+     <None Include="Library\PackageCache\com.unity.barracuda@3.0.0\package.json" />
      <None Include="Library\PackageCache\com.unity.cinemachine@2.8.9\ValidationExceptions.json" />
      <Folder Include="Library\PackageCache\com.unity.visualscripting@1.8.0" />
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.17\ValidationConfig.json" />
@@ -113,8 +122,10 @@
      <Folder Include="Library\PackageCache\com.unity.timeline@1.6.4" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\clientcommon.ja.txt" />
      <Folder Include="Library\PackageCache\com.unity.2d.path@5.0.2" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\basecommands.zh-Hans.txt" />
      <Folder Include="Assets\Enviroment" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\runtimes\osx" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\PackageConversionData.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\guihelp.en.txt" />
      <Folder Include="Library\PackageCache\com.unity.ext.nunit@1.0.6" />
@@ -122,6 +133,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\configurehelper.ja.txt" />
      <Folder Include="Library\PackageCache\com.unity.2d.animation@7.0.10\IK" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\semantic.en.txt" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\runtimes\osx\native" />
      <Folder Include="Library\PackageCache\com.unity.burst@1.6.6" />
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.17\package.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\workspaceserver.ko.txt" />
@@ -132,12 +144,14 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\commontypes.en.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\commontypes.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\images.zh-Hant.txt" />
+     <Folder Include="Assets\ML-Agents" />
      <None Include="Library\PackageCache\com.unity.ide.rider@3.0.18\package.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\i3.zh-Hans.txt" />
      <None Include="Library\PackageCache\com.unity.test-framework@1.1.31\package.json" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts" />
      <Folder Include="Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\basecommands.en.txt" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Tests" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\images.ko.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\workspaceserver.es.txt" />
      <Folder Include="Library\PackageCache\com.unity.inputsystem@1.5.1" />
@@ -147,11 +161,15 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\mergetool.en.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\workspaceserver.zh-Hans.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\binmergetool.zh-Hant.txt" />
+     <Folder Include="Library\PackageCache\com.unity.barracuda@3.0.0\Barracuda" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\plastic-gui.en.txt" />
+     <Folder Include="Library\PackageCache\com.unity.barracuda@3.0.0" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Samples" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\differences.zh-Hans.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\binmergetool.en.txt" />
      <None Include="Library\PackageCache\com.unity.visualscripting@1.8.0\ValidationExceptions.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\configurehelper.zh-Hant.txt" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Samples\3DBall" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\cm-help.zh-Hans.txt" />
      <None Include="Library\PackageCache\com.unity.2d.common@6.0.6\package.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\semantic.ko.txt" />
@@ -159,22 +177,29 @@
      <None Include="Library\PackageCache\com.unity.ide.visualstudio@2.0.17\ValidationExceptions.json" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\cm-help.zh-Hant.txt" />
      <None Include="Library\PackageCache\com.unity.cinemachine@2.8.9\license.txt" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\runtimes" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\clientcommon.zh-Hant.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\xdiff.zh-Hant.txt" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Textures" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\i3.zh-Hant.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\cm.ko.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\guihelp.zh-Hans.txt" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins" />
+     <Folder Include="Assets\ML-Agents\Timers" />
      <Folder Include="Library\PackageCache\com.unity.mathematics@1.2.6" />
+     <Folder Include="Assets\Enemy\CommonEnemy" />
      <Folder Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.7" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\FileSystemWatcherLicense.txt" />
      <None Include="Library\PackageCache\com.unity.2d.path@5.0.2\package.json" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\runtimes\win" />
      <None Include="Library\PackageCache\com.unity.2d.tilemap.extras@2.2.5\package.json" />
      <Folder Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Gizmos" />
      <None Include="Library\PackageCache\com.unity.inputsystem@1.5.1\ValidationExceptions.json" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Editor Resources\Gizmos" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\cm-help.ko.txt" />
+     <None Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\link.xml" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\cm-help.ja.txt" />
+     <Folder Include="Library\PackageCache\com.unity.barracuda@3.0.0\Barracuda\Tests" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\clientcommon.en.txt" />
      <Folder Include="Library\PackageCache\com.unity.collab-proxy@2.0.3" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\binmergetool.zh-Hans.txt" />
@@ -186,6 +211,7 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\plastic-gui.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\images.en.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\binmergetool.ja.txt" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\runtimes\linux\native" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6" />
      <Folder Include="Library\PackageCache\com.unity.ide.rider@3.0.18" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\binmergetool.es.txt" />
@@ -214,12 +240,14 @@
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\commontypes.ja.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\configurehelper.ko.txt" />
      <None Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\PackageConversionData_Assets.json" />
+     <Folder Include="Assets\Enemy" />
      <Folder Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Editor" />
      <None Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.7\package.json" />
      <None Include="Library\PackageCache\com.unity.mathematics@1.2.6\ValidationExceptions.json" />
      <Folder Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Package Resources" />
      <Folder Include="Library\PackageCache\com.unity.2d.tilemap.extras@2.2.5\Tests" />
      <None Include="Library\PackageCache\com.unity.2d.animation@7.0.10\package.json" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\guihelp.es.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\differences.en.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\workspaceserver.ja.txt" />
@@ -243,6 +271,7 @@
      <Folder Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Presets\Noise" />
      <Folder Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Presets" />
      <Folder Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.7" />
+     <Folder Include="U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\runtimes\win\native" />
      <Folder Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.7\Tests" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\semantic.zh-Hans.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@2.0.3\Lib\Editor\PlasticSCM\Localization\i3.ko.txt" />
@@ -495,11 +524,17 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>U:\endgame\unity\2021.3.23f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
+     <Reference Include="System.IO.Abstractions">
+     <HintPath>U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\System.IO.Abstractions.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Burst.Unsafe">
      <HintPath>U:\endgame\project\RoguelikeGame\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Mdb">
      <HintPath>U:\endgame\project\RoguelikeGame\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Google.Protobuf">
+     <HintPath>U:\endgame\project\RoguelikeGame\Library\PackageCache\com.unity.barracuda@3.0.0\Barracuda\Runtime\Plugins\ProtoBuffer\Google.Protobuf.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
      <HintPath>U:\endgame\project\RoguelikeGame\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
@@ -512,6 +547,15 @@
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>U:\endgame\project\RoguelikeGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Abstractions.TestingHelpers">
+     <HintPath>U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\System.IO.Abstractions.TestingHelpers.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Interactive.Async">
+     <HintPath>U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\System.Interactive.Async.dll</HintPath>
+     </Reference>
+     <Reference Include="Grpc.Core">
+     <HintPath>U:\ml-agents-release_20\ml-agents-release_20\com.unity.ml-agents\Plugins\ProtoBuffer\Grpc.Core.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>U:\endgame\unity\2021.3.23f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -893,6 +937,10 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.ML-Agents.csproj">
+      <Project>{f10adf93-e8ed-af84-0467-faeca9245c42}</Project>
+      <Name>Unity.ML-Agents</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
       <Project>{a5155d3d-8683-ac34-0553-e18e2e34356d}</Project>
       <Name>Unity.VisualScripting.Flow.Editor</Name>
@@ -901,13 +949,21 @@
       <Project>{d15c9bb7-4c7f-b316-5b03-12766fb4103e}</Project>
       <Name>Unity.2D.Tilemap.Extras</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
-      <Project>{14aa2d2d-5791-4e98-0a77-3a47e0060984}</Project>
-      <Name>Unity.2D.Animation.Editor</Name>
+    <ProjectReference Include="Unity.Barracuda.iOSBLAS.csproj">
+      <Project>{554c30f6-c606-d895-45ce-90883d21576d}</Project>
+      <Name>Unity.Barracuda.iOSBLAS</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Barracuda.BurstBLAS.csproj">
+      <Project>{0c741743-7867-1545-6d03-6455f9fbe08f}</Project>
+      <Name>Unity.Barracuda.BurstBLAS</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
       <Project>{415567ce-08de-dc21-e774-9c88f14fcdec}</Project>
       <Name>Unity.InternalAPIEngineBridge.001</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Barracuda.ONNX.csproj">
+      <Project>{10ad1367-f81d-213e-5b37-b50628348316}</Project>
+      <Name>Unity.Barracuda.ONNX</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{3e721c93-e1f6-e3e8-3089-75ea78737561}</Project>
@@ -916,6 +972,10 @@
     <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
       <Project>{4e839eac-01d5-4a86-cebb-debcb4e95c2f}</Project>
       <Name>Unity.2D.PixelPerfect</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
+      <Project>{14aa2d2d-5791-4e98-0a77-3a47e0060984}</Project>
+      <Name>Unity.2D.Animation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PsdPlugin.csproj">
       <Project>{1d8068ec-0690-d48d-8ece-44fcd2d06b9e}</Project>
@@ -928,6 +988,10 @@
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{15d1a565-c6f9-7c94-0908-e17723c0dd08}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Barracuda.csproj">
+      <Project>{38461a40-5863-9b59-9b85-0885baeee84d}</Project>
+      <Name>Unity.Barracuda</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{86fd2ae1-6242-0590-5e6c-3edac5b7fe76}</Project>
@@ -961,10 +1025,6 @@
       <Project>{19da2726-1319-212a-6683-38be82ff88a1}</Project>
       <Name>Unity.2D.Path.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.2D.Psdimporter.Editor.csproj">
-      <Project>{0ad2ffd0-bbad-fde3-9ab8-df9f39eece93}</Project>
-      <Name>Unity.2D.Psdimporter.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
       <Project>{4e480350-7ce9-d7f4-c33a-498864f05b71}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
@@ -985,21 +1045,25 @@
       <Project>{eb0aa588-67d8-430d-b759-c6bc227df3ef}</Project>
       <Name>Unity.2D.Tilemap.Extras.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
-      <Project>{401081dd-e508-e6d2-71e8-81399cadec54}</Project>
-      <Name>Unity.InternalAPIEditorBridge.001</Name>
+    <ProjectReference Include="Unity.2D.Psdimporter.Editor.csproj">
+      <Project>{0ad2ffd0-bbad-fde3-9ab8-df9f39eece93}</Project>
+      <Name>Unity.2D.Psdimporter.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
       <Project>{f9886d1c-d7f9-4623-be8c-236257aa3e32}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{dbcfca78-8b8a-4cca-a1c0-10214c9d512f}</Project>
-      <Name>Unity.Mathematics</Name>
+    <ProjectReference Include="Unity.ML-Agents.CommunicatorObjects.csproj">
+      <Project>{e7785cdf-dfc9-c1ad-5a8b-30166ea31f93}</Project>
+      <Name>Unity.ML-Agents.CommunicatorObjects</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
       <Project>{37e29e2b-491b-f85b-cb5a-bf201dddb226}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{dbcfca78-8b8a-4cca-a1c0-10214c9d512f}</Project>
+      <Name>Unity.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="Cinemachine.csproj">
       <Project>{c5457e9f-9e2c-93f7-e757-84f28574b8e6}</Project>
@@ -1016,6 +1080,10 @@
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{65893b3c-1a1c-b906-5618-70d9d016a3eb}</Project>
       <Name>Unity.VisualScripting.Shared.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
+      <Project>{401081dd-e508-e6d2-71e8-81399cadec54}</Project>
+      <Name>Unity.InternalAPIEditorBridge.001</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
       <Project>{c97ddfec-5a54-3898-c074-b845a4d4d291}</Project>
@@ -1045,13 +1113,25 @@
       <Project>{093b452d-688a-eac8-10f5-4c063dfd04c7}</Project>
       <Name>Unity.2D.Common.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Barracuda.Editor.csproj">
+      <Project>{5eee036c-be63-bb7b-4ad0-00744bde5f7a}</Project>
+      <Name>Unity.Barracuda.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{16890efa-a955-fb4f-77ac-33ed384fbddd}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Barracuda.MacBLAS.csproj">
+      <Project>{b8cd20d3-b39e-691d-2437-7e7ddec28ba9}</Project>
+      <Name>Unity.Barracuda.MacBLAS</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{32bdb637-a444-fa37-57e6-25e11c030d00}</Project>
       <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ML-Agents.Editor.csproj">
+      <Project>{b7368734-2720-e283-ff84-bfd344cb9150}</Project>
+      <Name>Unity.ML-Agents.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
