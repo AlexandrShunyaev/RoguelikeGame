@@ -1,4 +1,44 @@
 {
+    "CommonEnemyAgent": {
+        "checkpoints": [
+            {
+                "steps": 499951,
+                "file_path": "results\\2\\CommonEnemyAgent\\CommonEnemyAgent-499951.onnx",
+                "reward": -53.666666666666664,
+                "creation_time": 1684686545.2230992,
+                "auxillary_file_paths": [
+                    "results\\2\\CommonEnemyAgent\\CommonEnemyAgent-499951.pt"
+                ]
+            },
+            {
+                "steps": 999937,
+                "file_path": "results\\2\\CommonEnemyAgent\\CommonEnemyAgent-999937.onnx",
+                "reward": -90.0,
+                "creation_time": 1684687831.8161192,
+                "auxillary_file_paths": [
+                    "results\\2\\CommonEnemyAgent\\CommonEnemyAgent-999937.pt"
+                ]
+            },
+            {
+                "steps": 1000065,
+                "file_path": "results\\2\\CommonEnemyAgent\\CommonEnemyAgent-1000065.onnx",
+                "reward": -90.0,
+                "creation_time": 1684687831.912653,
+                "auxillary_file_paths": [
+                    "results\\2\\CommonEnemyAgent\\CommonEnemyAgent-1000065.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000065,
+            "file_path": "results\\2\\CommonEnemyAgent.onnx",
+            "reward": -90.0,
+            "creation_time": 1684687831.912653,
+            "auxillary_file_paths": [
+                "results\\2\\CommonEnemyAgent\\CommonEnemyAgent-1000065.pt"
+            ]
+        }
+    },
     "metadata": {
         "stats_format_version": "0.3.0",
         "mlagents_version": "0.30.0",

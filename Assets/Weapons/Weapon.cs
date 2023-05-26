@@ -1,25 +1,27 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public abstract class Weapon : MonoBehaviour
 {
     [SerializeField] protected GameObject projectilePrefab;
     [SerializeField] protected float fireForce;
     [SerializeField] protected Transform firePoint;
-    
-    protected Vector3 AimPosition;
+    protected SpriteRenderer SpriteRenderer;
 
-    public void SetAimPosition(Vector3 direction) => AimPosition = direction;
-    
-    public void Fire()
+    protected virtual void Awake()
     {
-        var position = firePoint.position;
-        var projectile = Instantiate(projectilePrefab, position, firePoint.rotation);
-        var rb = projectile.GetComponent<Rigidbody2D>();
-        var direction = (AimPosition - position);
-        rb.AddForce(new Vector2(direction.x, direction.y).normalized * fireForce, ForceMode2D.Impulse);
+        SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
+
+    public virtual void Rotate(Vector2 aimDirection)
+    {
+        var rotZ = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, rotZ);
+
+        if (aimDirection.normalized.x < 0 && !SpriteRenderer.flipY) SpriteRenderer.flipY = true;
+        else if (aimDirection.normalized.x > 0 && SpriteRenderer.flipY) SpriteRenderer.flipY = false;
+
+    }
+
+    public abstract void Fire(Vector2 aimDirection);
 }

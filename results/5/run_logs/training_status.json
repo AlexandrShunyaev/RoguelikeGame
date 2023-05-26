@@ -1,0 +1,47 @@
+{
+    "CommonEnemyAgent": {
+        "checkpoints": [
+            {
+                "steps": 499994,
+                "file_path": "results\\5\\CommonEnemyAgent\\CommonEnemyAgent-499994.onnx",
+                "reward": -89.7831414937973,
+                "creation_time": 1684781927.7953444,
+                "auxillary_file_paths": [
+                    "results\\5\\CommonEnemyAgent\\CommonEnemyAgent-499994.pt"
+                ]
+            },
+            {
+                "steps": 999991,
+                "file_path": "results\\5\\CommonEnemyAgent\\CommonEnemyAgent-999991.onnx",
+                "reward": -41.39256490979876,
+                "creation_time": 1684782363.4290862,
+                "auxillary_file_paths": [
+                    "results\\5\\CommonEnemyAgent\\CommonEnemyAgent-999991.pt"
+                ]
+            },
+            {
+                "steps": 1000079,
+                "file_path": "results\\5\\CommonEnemyAgent\\CommonEnemyAgent-1000079.onnx",
+                "reward": -41.655994296073914,
+                "creation_time": 1684782363.5138426,
+                "auxillary_file_paths": [
+                    "results\\5\\CommonEnemyAgent\\CommonEnemyAgent-1000079.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000079,
+            "file_path": "results\\5\\CommonEnemyAgent.onnx",
+            "reward": -41.655994296073914,
+            "creation_time": 1684782363.5138426,
+            "auxillary_file_paths": [
+                "results\\5\\CommonEnemyAgent\\CommonEnemyAgent-1000079.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.0.1+cu117"
+    }
+}

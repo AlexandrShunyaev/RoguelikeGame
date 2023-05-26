@@ -3,17 +3,30 @@ using UnityEngine;
 
 public abstract class Projectile : MonoBehaviour
 {
-    [SerializeField] private float damage;
-    [SerializeField] private float lifeTime;
+    [SerializeField] protected float damage;
+    [SerializeField] protected float lifeTime;
 
-    protected virtual void FixedUpdate()
+    protected void Update()
     {
-        lifeTime -= Time.fixedDeltaTime;
-        if (lifeTime < 0) Destroy(gameObject);
+        DestroyByTime();
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-       if(other.gameObject.CompareTag("Environment") || other.gameObject.CompareTag("Enemy")) Destroy(gameObject);
+        if (other.gameObject.TryGetComponent<Enemy>(out var enemy))
+        {
+            enemy.TakeDamage(damage); 
+            Destroy(gameObject);
+        }
+        else if (other.gameObject.TryGetComponent<CompositeCollider2D>(out var wall))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void DestroyByTime()
+    {
+        lifeTime -= Time.deltaTime;
+        if(lifeTime <= 0) Destroy(gameObject);
     }
 }

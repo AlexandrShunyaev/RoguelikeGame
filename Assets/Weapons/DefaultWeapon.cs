@@ -1,13 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DefaultWeapon : Weapon
 {
-    void Update()
+    public override void Fire(Vector2 aimDirection)
     {
-        var rotation = AimPosition - transform.position;
-        var rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rotZ);
+        var position = firePoint.position;
+        var projectile = Instantiate(projectilePrefab, position, firePoint.rotation);
+        var rb = projectile.GetComponent<Rigidbody2D>();
+        rb.AddForce(new Vector2(aimDirection.x, aimDirection.y).normalized * fireForce, ForceMode2D.Impulse);
     }
 }
